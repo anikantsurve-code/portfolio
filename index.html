@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anikant Surve — Graphic Designer, Web Designer & Video Editor</title>
+  <meta name="description" content="Portfolio of Anikant Surve: Creative Graphic Designer, Website Designer, and Video Editor delivering visual storytelling, brand identities, and high-converting creative media.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       NAVBAR
+       ====================================================================== -->
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a href="#hero" class="navbar__logo" aria-label="Anikant Surve Homepage">
+        <img src="assets/elements/AS logo.svg" alt="Anikant Surve" class="navbar__logo-img" width="58" height="35">
+      </a>
+
+      <nav class="navbar__links" aria-label="Main Navigation">
+        <a href="#about" class="navbar__link">About</a>
+        <a href="#video" class="navbar__link">Video Editing</a>
+        <a href="#websites" class="navbar__link">Websites</a>
+        <a href="#graphic" class="navbar__link">Graphic Design</a>
+        <a href="#services" class="navbar__link">Services</a>
+        <a href="#clients" class="navbar__link">Clients</a>
+        <a href="#contact" class="navbar__link">Contact</a>
+      </nav>
+
+      <a href="#contact" class="navbar__cta">Get in Touch</a>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="#about" class="navbar__link">About</a>
+      <a href="#video" class="navbar__link">Video Editing</a>
+      <a href="#websites" class="navbar__link">Websites</a>
+      <a href="#graphic" class="navbar__link">Graphic Design</a>
+      <a href="#services" class="navbar__link">Services</a>
+      <a href="#clients" class="navbar__link">Clients</a>
+      <a href="#contact" class="navbar__link">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ====================================================================
+         HERO SECTION
+         ==================================================================== -->
+    <section id="hero" class="hero" aria-label="Hero Section">
+      <div class="hero__ambient" aria-hidden="true"></div>
+      <canvas id="heroParticles" class="hero__particles" aria-hidden="true"></canvas>
+
+      <div class="container hero__container">
+        <p class="hero__label" id="heroLabel" data-text="Design is in the Details">
+          <span class="hero__label-text"></span><span class="hero__label-cursor" aria-hidden="true">|</span>
+        </p>
+
+        <div class="hero__title-wrap">
+          <h1 class="hero__title" id="heroTitle" aria-label="PORTFOLIO">
+            <span class="hero__char" style="--char-idx:0">P</span><span class="hero__char" style="--char-idx:1">O</span><span class="hero__char" style="--char-idx:2">R</span><span class="hero__char" style="--char-idx:3">T</span><span class="hero__char" style="--char-idx:4">F</span><span class="hero__char" style="--char-idx:5">O</span><span class="hero__char" style="--char-idx:6">L</span><span class="hero__char" style="--char-idx:7">I</span><span class="hero__char" style="--char-idx:8">O</span>
+          </h1>
+          <!-- 3D Glass Accent from assets/elements/Group 3.svg -->
+          <div class="hero__glass-box" id="heroGlassBox">
+            <img src="assets/elements/Group 3.svg" class="hero__glass-accent" id="heroGlassAccent" alt="" aria-hidden="true">
+          </div>
+          <!-- Signature & Underline from assets/elements/Vector 1.svg -->
+          <div class="hero__signature" id="heroSignature">
+            <span class="hero__signature-text">
+              <span class="hero__signature-inner">anikant surve</span>
+              <span class="hero__pen-tip" aria-hidden="true"></span>
+            </span>
+            <svg class="hero__signature-line" viewBox="0 0 233 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path class="hero__signature-path" d="M0.486572 0.115967C0.486572 0.115967 2.48657 8.61597 16.4866 8.61597C68.0536 8.61597 166.987 -0.384033 231.987 8.61597" stroke="#FFD60A" stroke-width="1" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <a href="#about" class="hero__scroll" aria-label="Scroll to about section">
+          <div class="hero__scroll-indicator"></div>
+          <span>Explore Work</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         ABOUT ME SECTION
+         ==================================================================== -->
+    <section id="about" class="section about" aria-label="About Me">
+      <div class="container">
+        <div class="about__content">
+          <span class="about__label">About me</span>
+          <h2 class="about__title">HI THERE !</h2>
+          <p class="about__bio">
+            I'm Anikant Surve, a passionate graphic designer with a keen eye for detail and a love for visual storytelling. Since 2019, I've sharpened my craft and gone pro in 2023—blending creativity with precision. I master design principles like typography, composition, and color theory, all while staying tuned into the latest tools and trends.
+          </p>
+          <p class="about__prompt">Want to know more about me ??</p>
+          <a href="#contact" class="about__connect-link">LET’S CONNECT</a>
+        </div>
+      </div>
+
+      <!-- Two-Row Horizontal Showcase Strip (Matching 02_About me.png) -->
+      <div class="about__showcase" aria-label="Selected works showcase">
+        <!-- Row 1 -->
+        <div class="marquee-row marquee-row--top">
+          <div class="marquee-track">
+            <div class="marquee-item"><img src="assets/images/marquee/row1-1.png" alt="Ivory Imperia Hot Cocoa Packaging" loading="lazy"></div>
+            <div class="marquee-item"><img src="assets/images/marquee/row1-2.png" alt="Milk Chocolate Packaging" loading="lazy"></div>
+            <div class="marquee-item"><img src="assets/images/marquee/row1-3.png" alt="Los Guanatono Salad Fresh Fiesta" loading="lazy"></div>
+            <div class="marquee-item"><img src="assets/images/marquee/row1-4.png" alt="Mint Mingle Beverages" loading="lazy"></div>
+            <div class="marquee-item"><img src="assets/images/marquee/row1-5.png" alt="Barista Culture Coffee Boxes" loading="lazy"></div>
+            <div class="marquee-item"><img src="assets/images/marquee/row1-6.png" alt="Barista Culture Chocolate Bars" loading="lazy"></div>
+            <!-- Duplicate for seamless infinite loop -->
+            <div class="marquee-item"><img src="assets/images/marquee/row1-1.png" alt="Ivory Imperia Hot Cocoa Packaging" loading="lazy"></div>
+            <div class="marquee-item"><img src="assets/images/marquee/row1-2.png" alt="Milk Chocolate Packaging" loading="lazy"></div>
+            <div class="marquee-item"><img src="assets/images/marquee/row1-3.png" alt="Los Guanatono Salad Fresh Fiesta" loading="lazy"></div>
+            <div class="marquee-item"><img src="assets/images/marquee/row1-4.png" alt="Mint Mingle Beverages" loading="lazy"></div>
+            <div class="marquee-item"><img src="assets/images/marquee/row1-5.png" alt="Barista Culture Coffee Boxes" loading="lazy"></div>
+            <div class="marquee-item"><img src="assets/images/marquee/row1-6.png" alt="Barista Culture Chocolate Bars" loading="lazy"></div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="marquee-row marquee-row--bottom">
+          <div class="marquee-track marquee-track--reverse">
+            <div class="marquee-item"><img src="assets/images/marquee/row2-1.png" alt="Munchibles Identity Cards" loading="lazy"></div>
+            <div class="marquee-item"><img src="assets/images/marquee/row2-2.png" alt="Hub of NEXGLAM Stationery" loading="lazy"></div>
+            <div class="marquee-item"><img src="assets/images/marquee/row2-3.png" alt="NEXGLAM Apparel Merch" loading="lazy"></div>
+            <div class="marquee-item"><img src="assets/images/marquee/row2-4.png" alt="Tango Bisto Identity Cards" loading="lazy"></div>
+            <div class="marquee-item"><img src="assets/images/marquee/row2-5.png" alt="Tango Bisto Burgers Packaging" loading="lazy"></div>
+            <div class="marquee-item"><img src="assets/images/marquee/row2-6.png" alt="Organic Seeds Seed Packets" loading="lazy"></div>
+            <!-- Duplicate for seamless infinite loop -->
+            <div class="marquee-item"><img src="assets/images/marquee/row2-1.png" alt="Munchibles Identity Cards" loading="lazy"></div>
+            <div class="marquee-item"><img src="assets/images/marquee/row2-2.png" alt="Hub of NEXGLAM Stationery" loading="lazy"></div>
+            <div class="marquee-item"><img src="assets/images/marquee/row2-3.png" alt="NEXGLAM Apparel Merch" loading="lazy"></div>
+            <div class="marquee-item"><img src="assets/images/marquee/row2-4.png" alt="Tango Bisto Identity Cards" loading="lazy"></div>
+            <div class="marquee-item"><img src="assets/images/marquee/row2-5.png" alt="Tango Bisto Burgers Packaging" loading="lazy"></div>
+            <div class="marquee-item"><img src="assets/images/marquee/row2-6.png" alt="Organic Seeds Seed Packets" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         DISCIPLINES STATEMENT (Matching 03_Work i do.png)
+         ==================================================================== -->
+    <section class="disciplines" id="disciplines" aria-label="Core Disciplines">
+      <div class="container">
+        <h2 class="disciplines__title" id="disciplinesTitle">
+          <span class="disciplines__item" data-index="0">
+            <span class="disciplines__text">WEBSITE DESIGN</span>
+          </span>
+          <span class="disciplines__item" data-index="1">
+            <span class="disciplines__text">GRAPHIC DESIGN</span>
+          </span>
+          <span class="disciplines__item" data-index="2">
+            <span class="disciplines__text">VIDEO PRODUCTION</span>
+          </span>
+        </h2>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         VIDEO EDITING SECTION (Matching 04_Video work.png)
+         ==================================================================== -->
+    <section id="video" class="section video-section" aria-label="Video Editing Portfolio">
+      <div class="container">
+        <div class="video-header">
+          <span class="section-label section-label--amber">Video Editing</span>
+          <h2 class="section-title">CREATE | CAPTIVATE | CONVERT</h2>
+          <p class="section-sub">
+            crafting compelling videos that share your brand story and drive engagement—from promos to product spots.
+          </p>
+        </div>
+
+        <!-- Category 1: GEN AI LED MOVIES -->
+        <div class="video-section-group">
+          <h3 class="video-section-group__header">GEN AI LED MOVIES</h3>
+          <div class="video-group-frame">
+            <div class="video-grid--landscape">
+              <div class="video-card video-card--yt" data-yt-id="8W9Vmcqp7m8">
+                <div class="video-card__poster" style="background-image: url('assets/images/yt_thumbs/genai-1.jpg');">
+                  <div class="video-play-btn" aria-label="Play Video">
+                    <svg viewBox="0 0 24 24"><polygon points="7,4 20,12 7,20"></polygon></svg>
+                  </div>
+                </div>
+                <div class="video-card__player"></div>
+              </div>
+              <div class="video-card video-card--yt" data-yt-id="2rzC2KhT1d0">
+                <div class="video-card__poster" style="background-image: url('assets/images/yt_thumbs/genai-2.jpg');">
+                  <div class="video-play-btn" aria-label="Play Video">
+                    <svg viewBox="0 0 24 24"><polygon points="7,4 20,12 7,20"></polygon></svg>
+                  </div>
+                </div>
+                <div class="video-card__player"></div>
+              </div>
+              <div class="video-card video-card--yt" data-yt-id="CzUCUp52qRQ">
+                <div class="video-card__poster" style="background-image: url('assets/images/yt_thumbs/genai-3.jpg');">
+                  <div class="video-play-btn" aria-label="Play Video">
+                    <svg viewBox="0 0 24 24"><polygon points="7,4 20,12 7,20"></polygon></svg>
+                  </div>
+                </div>
+                <div class="video-card__player"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: AI, MARKETING, VOX & SAAS (Horizontal Scroll) -->
+        <div class="video-section-group video-section-group--scroll">
+          <div class="video-scroll-header-bar">
+            <h3 class="video-section-group__header">AI, MARKETING, VOX &amp; SAAS PRODUCTIONS</h3>
+            <div class="video-scroll-arrows">
+              <button class="video-scroll-arrow video-scroll-arrow--prev" id="scrollPrevBtn" aria-label="Scroll Left">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+              </button>
+              <button class="video-scroll-arrow video-scroll-arrow--next" id="scrollNextBtn" aria-label="Scroll Right">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="video-horizontal-track" id="specialtyVideoTrack">
+            <!-- 1: AI ANIMATION VIDEO -->
+            <div class="video-scroll-card">
+              <span class="video-scroll-card__badge">AI ANIMATION VIDEO</span>
+              <div class="video-card video-card--yt" data-yt-id="o3AxNrIBZl0">
+                <div class="video-card__poster" style="background-image: url('assets/images/yt_thumbs/ai-animation-1.jpg');">
+                  <div class="video-play-btn" aria-label="Play Video">
+                    <svg viewBox="0 0 24 24"><polygon points="7,4 20,12 7,20"></polygon></svg>
+                  </div>
+                </div>
+                <div class="video-card__player"></div>
+              </div>
+            </div>
+
+            <!-- 2: AI - CONVERSATION FOR MARKETING -->
+            <div class="video-scroll-card">
+              <span class="video-scroll-card__badge">AI - CONVERSATION FOR MARKETING</span>
+              <div class="video-card video-card--yt" data-yt-id="F2iH2bbL_jA">
+                <div class="video-card__poster" style="background-image: url('assets/images/yt_thumbs/ai-conversation-1.jpg');">
+                  <div class="video-play-btn" aria-label="Play Video">
+                    <svg viewBox="0 0 24 24"><polygon points="7,4 20,12 7,20"></polygon></svg>
+                  </div>
+                </div>
+                <div class="video-card__player"></div>
+              </div>
+            </div>
+
+            <!-- 3: VOX STYLE MOTION GRAPHICS -->
+            <div class="video-scroll-card">
+              <span class="video-scroll-card__badge">VOX STYLE MOTION GRAPHICS</span>
+              <div class="video-card video-card--yt" data-yt-id="ILhq0BH-Zog">
+                <div class="video-card__poster" style="background-image: url('assets/images/yt_thumbs/vox-1.jpg');">
+                  <div class="video-play-btn" aria-label="Play Video">
+                    <svg viewBox="0 0 24 24"><polygon points="7,4 20,12 7,20"></polygon></svg>
+                  </div>
+                </div>
+                <div class="video-card__player"></div>
+              </div>
+            </div>
+
+            <!-- 4: SAAS BASED VIDEO -->
+            <div class="video-scroll-card">
+              <span class="video-scroll-card__badge">SAAS BASED VIDEO</span>
+              <div class="video-card video-card--yt" data-yt-id="OasB_-9H1Jg">
+                <div class="video-card__poster" style="background-image: url('assets/images/yt_thumbs/saas-1.jpg');">
+                  <div class="video-play-btn" aria-label="Play Video">
+                    <svg viewBox="0 0 24 24"><polygon points="7,4 20,12 7,20"></polygon></svg>
+                  </div>
+                </div>
+                <div class="video-card__player"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 6: SOCIAL MEDIA ADS -->
+        <div class="video-section-group">
+          <h3 class="video-section-group__header">SOCIAL MEDIA ADS</h3>
+          <div class="video-group-frame">
+            <div class="video-grid--portrait">
+              <div class="video-card video-card--yt" data-yt-id="WCK4xmu1xcI">
+                <div class="video-card__poster" style="background-image: url('assets/images/yt_thumbs/social-1_portrait.jpg');">
+                  <div class="video-play-btn" aria-label="Play Video">
+                    <svg viewBox="0 0 24 24"><polygon points="7,4 20,12 7,20"></polygon></svg>
+                  </div>
+                </div>
+                <div class="video-card__player"></div>
+              </div>
+              <div class="video-card video-card--yt" data-yt-id="VJ1wVAUm4GQ">
+                <div class="video-card__poster" style="background-image: url('assets/images/yt_thumbs/social-2_portrait.jpg');">
+                  <div class="video-play-btn" aria-label="Play Video">
+                    <svg viewBox="0 0 24 24"><polygon points="7,4 20,12 7,20"></polygon></svg>
+                  </div>
+                </div>
+                <div class="video-card__player"></div>
+              </div>
+              <div class="video-card video-card--yt" data-yt-id="3RbWZ3N8NhM">
+                <div class="video-card__poster" style="background-image: url('assets/images/yt_thumbs/social-3_portrait.jpg');">
+                  <div class="video-play-btn" aria-label="Play Video">
+                    <svg viewBox="0 0 24 24"><polygon points="7,4 20,12 7,20"></polygon></svg>
+                  </div>
+                </div>
+                <div class="video-card__player"></div>
+              </div>
+              <div class="video-card video-card--yt" data-yt-id="fp5nkMwMKUo">
+                <div class="video-card__poster" style="background-image: url('assets/images/yt_thumbs/social-4_portrait.jpg');">
+                  <div class="video-play-btn" aria-label="Play Video">
+                    <svg viewBox="0 0 24 24"><polygon points="7,4 20,12 7,20"></polygon></svg>
+                  </div>
+                </div>
+                <div class="video-card__player"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 7: 2D ANIMATION -->
+        <div class="video-section-group">
+          <h3 class="video-section-group__header">2D ANIMATION</h3>
+          <div class="video-group-frame">
+            <div class="video-grid--landscape video-grid--2col">
+              <div class="video-card video-card--yt" data-yt-id="mPyXqMXJHqE">
+                <div class="video-card__poster" style="background-image: url('assets/images/yt_thumbs/2d-1.jpg');">
+                  <div class="video-play-btn" aria-label="Play Video">
+                    <svg viewBox="0 0 24 24"><polygon points="7,4 20,12 7,20"></polygon></svg>
+                  </div>
+                </div>
+                <div class="video-card__player"></div>
+              </div>
+              <div class="video-card video-card--yt" data-yt-id="DGxgXhOrGmo">
+                <div class="video-card__poster" style="background-image: url('assets/images/yt_thumbs/2d-2.jpg');">
+                  <div class="video-play-btn" aria-label="Play Video">
+                    <svg viewBox="0 0 24 24"><polygon points="7,4 20,12 7,20"></polygon></svg>
+                  </div>
+                </div>
+                <div class="video-card__player"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 8: MOTION GRAPHICS -->
+        <div class="video-section-group">
+          <h3 class="video-section-group__header">MOTION GRAPHICS</h3>
+          <div class="video-group-frame">
+            <div class="video-grid--landscape video-grid--portrait-3">
+              <div class="video-card video-card--yt" data-yt-id="pkrDXA8kBRw">
+                <div class="video-card__poster" style="background-image: url('assets/images/yt_thumbs/motion-1_portrait.jpg');">
+                  <div class="video-play-btn" aria-label="Play Video">
+                    <svg viewBox="0 0 24 24"><polygon points="7,4 20,12 7,20"></polygon></svg>
+                  </div>
+                </div>
+                <div class="video-card__player"></div>
+              </div>
+              <div class="video-card video-card--yt" data-yt-id="8ZK1fjLncxE">
+                <div class="video-card__poster" style="background-image: url('assets/images/yt_thumbs/motion-2_portrait.jpg');">
+                  <div class="video-play-btn" aria-label="Play Video">
+                    <svg viewBox="0 0 24 24"><polygon points="7,4 20,12 7,20"></polygon></svg>
+                  </div>
+                </div>
+                <div class="video-card__player"></div>
+              </div>
+              <div class="video-card video-card--yt" data-yt-id="H_Ff1BU8jQo">
+                <div class="video-card__poster" style="background-image: url('assets/images/yt_thumbs/motion-3_portrait.jpg');">
+                  <div class="video-play-btn" aria-label="Play Video">
+                    <svg viewBox="0 0 24 24"><polygon points="7,4 20,12 7,20"></polygon></svg>
+                  </div>
+                </div>
+                <div class="video-card__player"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         WEBSITE DESIGN SECTION (Matching 05_website design.png)
+         ==================================================================== -->
+    <section id="websites" class="section" aria-label="Website Design Projects">
+      <div class="container">
+        <div class="website-section-header">
+          <span class="section-label section-label--magenta">Website Design</span>
+          <h2 class="section-title">IMPRESS | ENGAGE | PERFORM</h2>
+          <p class="section-sub">
+            I craft responsive websites on no-code platforms like Wix, Framer,<br class="hide-mobile"> — perfect for portfolios, blogs, and e-commerce.
+          </p>
+        </div>
+
+        <div class="websites-grid">
+          <!-- Website Card 1: Karma Dev -->
+          <article class="website-card">
+            <div class="website-card__header">
+              <span class="website-card__year">2024</span>
+            </div>
+            <h3 class="website-card__title">KARMA DEV. <span>- Hospitality</span></h3>
+            <div class="website-card__img-wrap" data-lightbox="assets/images/website-karma.png">
+              <img src="assets/images/website-screen-karma.png" alt="Karma Dev Resort Hospitality Website Design" loading="lazy">
+            </div>
+            <div class="website-card__footer">
+              <div class="website-card__meta">
+                <p class="website-card__tag">Revamp</p>
+                <p class="website-card__desc">Moved from WordPress to Wix for better performance and design control.</p>
+              </div>
+              <a href="https://karmadevelopments.com/" target="_blank" rel="noopener noreferrer" class="website-card__btn">visit site ↗</a>
+            </div>
+          </article>
+
+          <!-- Website Card 2: Optiva -->
+          <article class="website-card">
+            <div class="website-card__header">
+              <span class="website-card__year">2023</span>
+            </div>
+            <h3 class="website-card__title">OPTIVA <span>- Telecommunication</span></h3>
+            <div class="website-card__img-wrap" data-lightbox="assets/images/website-optiva.png">
+              <img src="assets/images/website-screen-optiva.png" alt="Optiva Telecommunication Platform Website" loading="lazy">
+            </div>
+            <div class="website-card__footer">
+              <div class="website-card__meta">
+                <p class="website-card__tag">Platform Upgrade</p>
+                <p class="website-card__desc">Moved from WordPress to Wix for better performance and design control.</p>
+              </div>
+              <a href="https://www.optiva.com/" target="_blank" rel="noopener noreferrer" class="website-card__btn">visit site ↗</a>
+            </div>
+          </article>
+
+          <!-- Website Card 3: TechnoWizards -->
+          <article class="website-card">
+            <div class="website-card__header">
+              <span class="website-card__year">2023</span>
+            </div>
+            <h3 class="website-card__title">TECHNOWIZARDS <span>- AI Automation</span></h3>
+            <div class="website-card__img-wrap" data-lightbox="assets/images/website-technowizards.png">
+              <img src="assets/images/website-screen-technowizards.png" alt="TechnoWizards AI Automation Website" loading="lazy">
+            </div>
+            <div class="website-card__footer">
+              <div class="website-card__meta">
+                <p class="website-card__tag">Revamp</p>
+                <p class="website-card__desc">Moved from WordPress to Wix for better performance and design control.</p>
+              </div>
+              <a href="https://www.technowizards.ai/" target="_blank" rel="noopener noreferrer" class="website-card__btn">visit site ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         GRAPHIC DESIGN SECTION (Matching 06A, 06B, 06D)
+         ==================================================================== -->
+    <section id="graphic" class="section" aria-label="Graphic Design Showcase">
+      <div class="container">
+        <div class="graphic-section-header">
+          <span class="section-label section-label--green">Graphic Design</span>
+          <h2 class="section-title">CAPTURE | COMMUNICATE | CONNECT</h2>
+          <p class="section-sub">
+            design bold visuals that reflect your brand and engage your audience—from logos to marketing assets.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="filter-tabs" role="tablist">
+          <button class="filter-tab active" data-filter="all">All Work</button>
+          <button class="filter-tab" data-filter="posters">Posters</button>
+          <button class="filter-tab" data-filter="banners">Banners</button>
+          <button class="filter-tab" data-filter="logos">Logos</button>
+          <button class="filter-tab" data-filter="packaging">Packaging</button>
+          <button class="filter-tab" data-filter="branding">Brand Identity</button>
+        </div>
+
+        <!-- Group 1: POSTERS (06A) -->
+        <div class="graphic-group" data-category="posters">
+          <h3 class="graphic-group__title">POSTERS</h3>
+          <div class="posters-grid">
+            <div class="poster-card" data-lightbox="assets/images/poster-1-education.png">
+              <img src="assets/images/poster-1-education.png?v=2" alt="UNICEF Education Poster" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="poster-card" data-lightbox="assets/images/poster-2-hope.png">
+              <img src="assets/images/poster-2-hope.png?v=2" alt="Hope and Resilience Poster" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="poster-card" data-lightbox="assets/images/poster-3-stress.png">
+              <img src="assets/images/poster-3-stress.png?v=2" alt="Signs of Stress SOS Poster" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="poster-card" data-lightbox="assets/images/poster-4-brain.png">
+              <img src="assets/images/poster-4-brain.png?v=2" alt="Protect Your Brain Mental Health Poster" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Group 2: BANNERS (06B) -->
+        <div class="graphic-group" data-category="banners">
+          <h3 class="graphic-group__title">BANNERS</h3>
+          <div class="banners-grid">
+            <div class="banner-card" data-lightbox="assets/images/banner-1-results.png">
+              <img src="assets/images/banner-1-results.png?v=2" alt="Employee Training Program Delivering Results Banner" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="banner-card" data-lightbox="assets/images/banner-2-playful.png">
+              <img src="assets/images/banner-2-playful.png?v=2" alt="How to Add a Playful Edge - Boring to Bold Banner" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="banner-card" data-lightbox="assets/images/banner-3-elearning.png">
+              <img src="assets/images/banner-3-elearning.png?v=2" alt="eLearning Multigenerational Workforce Banner" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="banner-card" data-lightbox="assets/images/banner-4-retail.png">
+              <img src="assets/images/banner-4-retail.png?v=2" alt="Retail Sector Lead Generation Banner" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Group 3: LOGOS (06D) -->
+        <div class="graphic-group" data-category="logos">
+          <h3 class="graphic-group__title">LOGOS</h3>
+          <div class="square-grid--4col">
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/logo-1-garmano.png">
+              <img src="assets/images/graphic_portfolio/logo-1-garmano.png" alt="Samuel's Garmano Logo" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/logo-2-jolt.png">
+              <img src="assets/images/graphic_portfolio/logo-2-jolt.png" alt="Jolt Energy Logo" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/logo-3-atomique.png">
+              <img src="assets/images/graphic_portfolio/logo-3-atomique.png" alt="Atomique Hair Beauty Studio Logo" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/logo-4-thryve.png">
+              <img src="assets/images/graphic_portfolio/logo-4-thryve.png" alt="Thryve Nutrition Logo" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Group 4: PACKAGING (06D - 20 items in 4 columns) -->
+        <div class="graphic-group" data-category="packaging">
+          <h3 class="graphic-group__title">PACKAGING</h3>
+          <div class="square-grid--4col">
+            <!-- Row 1: Barista Culture -->
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/packaging-01.png">
+              <img src="assets/images/graphic_portfolio/packaging-01.png" alt="Barista Culture Box Trios" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/packaging-02.png">
+              <img src="assets/images/graphic_portfolio/packaging-02.png" alt="Barista Culture Coffee Bars" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/packaging-03.png">
+              <img src="assets/images/graphic_portfolio/packaging-03.png" alt="Barista Culture To-Go Cup" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/packaging-04.png">
+              <img src="assets/images/graphic_portfolio/packaging-04.png" alt="Barista Culture Chocolate Pouch" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+
+            <!-- Row 2: Ivory Hot Cocoa & Sweets -->
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/packaging-05.png">
+              <img src="assets/images/graphic_portfolio/packaging-05.png" alt="Ivory Eat Right Sachets" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/packaging-06.png">
+              <img src="assets/images/graphic_portfolio/packaging-06.png" alt="Ivory Hot Cocoa Cups" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/packaging-07.png">
+              <img src="assets/images/graphic_portfolio/packaging-07.png" alt="Sweet Tooth Chocolate Tote Bag" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/packaging-08.png">
+              <img src="assets/images/graphic_portfolio/packaging-08.png" alt="Milk Chocolate Bar Packaging" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+
+            <!-- Row 3: Farm Fresh Organic Seeds & Greens -->
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/packaging-09.png">
+              <img src="assets/images/graphic_portfolio/packaging-09.png" alt="Farm Fresh High Fibre Micro Bar" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/packaging-10.png">
+              <img src="assets/images/graphic_portfolio/packaging-10.png" alt="Farm Fresh Sprouts Eco Container" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/packaging-11.png">
+              <img src="assets/images/graphic_portfolio/packaging-11.png" alt="Farm Fresh Grow Basil Seed Pouch" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/packaging-12.png">
+              <img src="assets/images/graphic_portfolio/packaging-12.png" alt="Big Tiny Kale Kombucha Glass Bottle" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+
+            <!-- Row 4: Tango Fast Food & Bistro -->
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/packaging-13.png">
+              <img src="assets/images/graphic_portfolio/packaging-13.png" alt="Tango Bistro Super Pack Tape" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/packaging-14.png">
+              <img src="assets/images/graphic_portfolio/packaging-14.png" alt="Tal Melt Master Burger Wrap" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/packaging-15.png">
+              <img src="assets/images/graphic_portfolio/packaging-15.png" alt="Tal Fri Fries Box" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/packaging-16.png">
+              <img src="assets/images/graphic_portfolio/packaging-16.png" alt="Burgers Crisp Pattie Takeout Bag" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+
+            <!-- Row 5: Thryve Nutrition Products -->
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/packaging-17.png">
+              <img src="assets/images/graphic_portfolio/packaging-17.png" alt="Thryve Eat Right Nutrition Bar" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/packaging-18.png">
+              <img src="assets/images/graphic_portfolio/packaging-18.png" alt="Thryve Real Dry Fruits Muesli Box" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/packaging-19.png">
+              <img src="assets/images/graphic_portfolio/packaging-19.png" alt="Thryve Retail Shopping Bag" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/packaging-20.png">
+              <img src="assets/images/graphic_portfolio/packaging-20.png" alt="Thryve Choco Crunch Milkshake Bottle" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Group 5: BRAND IDENTITY (06D) -->
+        <div class="graphic-group" data-category="branding">
+          <h3 class="graphic-group__title">BRANDING</h3>
+          <div class="square-grid--4col">
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/branding-1-belloche.png">
+              <img src="assets/images/graphic_portfolio/branding-1-belloche.png" alt="Belloche Heritage Embossed Dark Blue Leather" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/branding-2-cards.png">
+              <img src="assets/images/graphic_portfolio/branding-2-cards.png" alt="Belloche Botanical Luxury Business Cards" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/branding-3-tags.png">
+              <img src="assets/images/graphic_portfolio/branding-3-tags.png" alt="Noir Élite Apparel Hang Tags" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+            <div class="square-card" data-lightbox="assets/images/graphic_portfolio/branding-4-stationery.png">
+              <img src="assets/images/graphic_portfolio/branding-4-stationery.png" alt="Belloche Heritage Complete Stationery Suite" loading="lazy">
+              <div class="zoom-overlay"><div class="zoom-icon">🔍</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         WHAT I DO / SERVICES (Matching 07A_What do i do.png)
+         ==================================================================== -->
+    <section id="services" class="services-section" aria-label="Services & Capabilities">
+      <div class="services-watermark-wrap" aria-hidden="true">
+        <img src="assets/images/what-i-do-watermark.png" alt="WHAT I DO" class="services-watermark-img">
+      </div>
+
+      <div class="container services-container">
+        <div class="services-grid">
+          <!-- Column 1: Graphic Design -->
+          <div class="service-box">
+            <h3 class="service-box__header">GRAPHIC DESIGN</h3>
+            <ul class="service-list">
+              <li class="service-item"><img src="assets/icons/Frame 32-1.svg" class="service-icon" alt="" aria-hidden="true"> Posters</li>
+              <li class="service-item"><img src="assets/icons/Frame 45.svg" class="service-icon" alt="" aria-hidden="true"> Banners</li>
+              <li class="service-item"><img src="assets/icons/Frame 46.svg" class="service-icon" alt="" aria-hidden="true"> Brochure &amp; Flyers</li>
+              <li class="service-item"><img src="assets/icons/Frame 47.svg" class="service-icon" alt="" aria-hidden="true"> Post Design</li>
+              <li class="service-item"><img src="assets/icons/Frame 48.svg" class="service-icon" alt="" aria-hidden="true"> Logo Designs</li>
+              <li class="service-item"><img src="assets/icons/Frame 49.svg" class="service-icon" alt="" aria-hidden="true"> Brand Guidelines</li>
+              <li class="service-item"><img src="assets/icons/Frame 50.svg" class="service-icon" alt="" aria-hidden="true"> Packaging Designs</li>
+              <li class="service-item"><img src="assets/icons/Frame 51.svg" class="service-icon" alt="" aria-hidden="true"> Business Cards</li>
+            </ul>
+          </div>
+
+          <!-- Column 2: Website Design -->
+          <div class="service-box">
+            <h3 class="service-box__header">WEBSITE DESIGN</h3>
+            <ul class="service-list">
+              <li class="service-item"><img src="assets/icons/Frame 31.svg" class="service-icon" alt="" aria-hidden="true"> Landing Pages</li>
+              <li class="service-item"><img src="assets/icons/Frame 32.svg" class="service-icon" alt="" aria-hidden="true"> E-commerce</li>
+              <li class="service-item"><img src="assets/icons/Frame 33.svg" class="service-icon" alt="" aria-hidden="true"> Portfolio</li>
+              <li class="service-item"><img src="assets/icons/Frame 34.svg" class="service-icon" alt="" aria-hidden="true"> Blogs</li>
+              <li class="service-item"><img src="assets/icons/Frame 35.svg" class="service-icon" alt="" aria-hidden="true"> Corporate Websites</li>
+              <li class="service-item"><img src="assets/icons/Frame 36.svg" class="service-icon" alt="" aria-hidden="true"> UI/UX Design</li>
+              <li class="service-item"><img src="assets/icons/Frame 37.svg" class="service-icon" alt="" aria-hidden="true"> Responsive Design</li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Video Editing -->
+          <div class="service-box">
+            <h3 class="service-box__header">VIDEO EDITING</h3>
+            <ul class="service-list">
+              <li class="service-item"><img src="assets/icons/Frame 52.svg" class="service-icon" alt="" aria-hidden="true"> Promotional Videos</li>
+              <li class="service-item"><img src="assets/icons/Frame 53.svg" class="service-icon" alt="" aria-hidden="true"> Corporate Videos</li>
+              <li class="service-item"><img src="assets/icons/Frame 54.svg" class="service-icon" alt="" aria-hidden="true"> Social Media Clips</li>
+              <li class="service-item"><img src="assets/icons/Frame 55.svg" class="service-icon" alt="" aria-hidden="true"> Product Demos</li>
+              <li class="service-item"><img src="assets/icons/Frame 56.svg" class="service-icon" alt="" aria-hidden="true"> Event Videos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         WORKED WITH / CLIENTS (Matching 08_Worked with and let's connect.png)
+         ==================================================================== -->
+    <section id="clients" class="clients-section" aria-label="Brands and Clients">
+      <div class="clients-rose-glow" aria-hidden="true"></div>
+      <div class="container">
+        <span class="clients-section-label">Worked with</span>
+        <h2 class="section-title">VISUALIZE | CRAFT | DELIVER</h2>
+        <p class="section-sub clients-sub">
+          I've had the opportunity to collaborate with brands and companies across diverse industries, helping them elevate their digital presence through design, web, and video.
+        </p>
+
+        <!-- Complete 3-row Logos Strip from Figma Artboard 08 -->
+        <div class="clients-grid-wrap">
+          <img src="assets/images/clients-grid-transparent.png" alt="Collaborated with Tetra Pak, World Health Organization, Uniphore, Twin Leaves, Blossom Academy, Medecro.ai, Techno Wizards, Optiva, Karma Group" class="clients-grid-img" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         LET'S CONNECT / CONTACT (Matching 08_Worked with and let's connect.png)
+         ==================================================================== -->
+    <section id="contact" class="contact-section" aria-label="Contact Section">
+      <!-- Typography Watermark from Figma Artboard 08 -->
+      <div class="contact-watermark-wrap" aria-hidden="true">
+        <img src="assets/images/lets-connect-watermark.png" alt="LET'S CONNECT" class="contact-watermark-img">
+      </div>
+
+      <div class="container contact-container">
+        <!-- Modern Glassmorphic Interactive Contact Form -->
+        <div class="contact-box">
+          <div class="contact-box__header">
+            <span class="section-label section-label--cyan">Get In Touch</span>
+            <h2 class="contact-box__title">LET'S BUILD SOMETHING</h2>
+            <p class="contact-box__sub">Have a project, inquiry, or design collaboration in mind? Fill in the details below and I'll get back to you promptly.</p>
+          </div>
+
+          <form id="contactForm" class="form-grid" novalidate>
+            <div class="form-group">
+              <label for="userName" class="form-label">Your Name</label>
+              <input type="text" id="userName" name="name" class="form-input" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="userEmail" class="form-label">Email Address</label>
+              <input type="email" id="userEmail" name="email" class="form-input" placeholder="e.g. john@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="projectType" class="form-label">Enquiry Type</label>
+              <select id="projectType" name="type" class="form-select">
+                <option value="Website Design">Website Design</option>
+                <option value="Graphic Design">Graphic Design &amp; Branding</option>
+                <option value="Video Editing">Video Editing &amp; Animation</option>
+                <option value="Full Creative Direction">Full Creative Direction</option>
+                <option value="General">General Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="projectSubject" class="form-label">Subject</label>
+              <input type="text" id="projectSubject" name="subject" class="form-input" placeholder="e.g. New Brand Identity & Website">
+            </div>
+
+            <div class="form-group form-group--full">
+              <label for="userMessage" class="form-label">Project Details</label>
+              <textarea id="userMessage" name="message" class="form-textarea" placeholder="Tell me about your goals, timeline, and vision..." required></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn" class="form-submit-btn">
+              Send Message <span>→</span>
+            </button>
+
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">
+        © 2025 <span>Anikant Surve</span>. All Rights Reserved. Crafted with passion.
+      </p>
+      <a href="#hero" class="footer__top-btn">
+        Back to top <span>↑</span>
+      </a>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       LIGHTBOX / MODAL OVERLAY
+       ====================================================================== -->
+  <div id="portfolioModal" class="modal" role="dialog" aria-modal="true" aria-label="Portfolio Item Preview">
+    <button id="modalClose" class="modal__close" aria-label="Close modal">✕</button>
+    <div class="modal__content">
+      <img id="modalImage" class="modal__img" src="" alt="Modal preview">
+      <video id="modalVideo" class="modal__video" controls playsinline></video>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
