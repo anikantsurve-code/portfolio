@@ -758,7 +758,11 @@
             <p class="contact-box__sub">Have a project, inquiry, or design collaboration in mind? Fill in the details below and I'll get back to you promptly.</p>
           </div>
 
-          <form id="contactForm" class="form-grid" novalidate>
+          <form id="contactForm" action="https://formsubmit.co/anikantsurve@gmail.com" method="POST" class="form-grid" novalidate>
+            <!-- FormSubmit Configuration -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="New Portfolio Message!">
             <div class="form-group">
               <label for="userName" class="form-label">Your Name</label>
               <input type="text" id="userName" name="name" class="form-input" placeholder="e.g. John Doe" required>

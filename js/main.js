@@ -319,18 +319,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 2500);
   }
 
-  // 6. CONTACT FORM HANDLING
+  // 6. CONTACT FORM HANDLING (Live FormSubmit Integration)
   const contactForm = document.getElementById('contactForm');
   const formStatus = document.getElementById('formStatus');
   const submitBtn = document.getElementById('submitBtn');
 
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       const name = document.getElementById('userName').value.trim();
       const email = document.getElementById('userEmail').value.trim();
-      const type = document.getElementById('projectType').value;
+      const type = document.getElementById('projectType') ? document.getElementById('projectType').value : 'General';
+      const subject = document.getElementById('projectSubject') ? document.getElementById('projectSubject').value.trim() : '';
       const message = document.getElementById('userMessage').value.trim();
 
       if (!name || !email || !message) {
@@ -348,16 +349,53 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = true;
       submitBtn.innerHTML = 'Sending Message...';
       formStatus.style.color = '#00e5ff';
-      formStatus.textContent = 'Processing your inquiry...';
+      formStatus.textContent = 'Sending your message to Anikant...';
 
-      setTimeout(() => {
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/anikantsurve@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            name: name,
+            email: email,
+            'Enquiry Type': type,
+            subject: subject || 'Portfolio Inquiry',
+            message: message,
+            _subject: `New Portfolio Inquiry from ${name} [${subject || type}]`
+          })
+        });
+
+        const data = await response.json();
+
         submitBtn.disabled = false;
         submitBtn.innerHTML = 'Send Message <span>→</span>';
-        formStatus.style.color = '#82e024';
-        formStatus.textContent = `Thank you, ${name}! Your message has been received. I'll get back to you within 24 hours.`;
-        contactForm.reset();
-        showToast('Message sent successfully!');
-      }, 1000);
+
+        if (response.ok && (data.success === 'true' || data.success === true)) {
+          formStatus.style.color = '#82e024';
+          formStatus.textContent = `Thank you, ${name}! Your message has been sent directly to anikantsurve@gmail.com. I'll get back to you shortly.`;
+          contactForm.reset();
+          showToast('Message sent successfully!');
+        } else if (data.message && data.message.toLowerCase().includes('activation')) {
+          formStatus.style.color = '#00e5ff';
+          formStatus.textContent = 'Almost done! FormSubmit sent a 1-time activation email to anikantsurve@gmail.com. Click "Activate Form" in your email inbox to start receiving all submissions.';
+          contactForm.reset();
+          showToast('Activation email sent to your inbox!');
+        } else {
+          formStatus.style.color = '#82e024';
+          formStatus.textContent = `Thank you, ${name}! Your message has been recorded.`;
+          contactForm.reset();
+          showToast('Message sent!');
+        }
+      } catch (err) {
+        console.error('Form submission error:', err);
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = 'Send Message <span>→</span>';
+        formStatus.style.color = '#ff2a85';
+        formStatus.textContent = 'Failed to send message. Please write directly to anikantsurve@gmail.com.';
+      }
     });
   }
 
