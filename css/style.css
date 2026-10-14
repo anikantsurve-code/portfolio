@@ -812,6 +812,9 @@ button {
   max-width: 860px;
   margin: 0 auto 2rem auto;
   opacity: 0.95;
+  text-align: justify;
+  text-justify: inter-word;
+  text-align-last: center;
 }
 
 .about__prompt {
