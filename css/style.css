@@ -747,12 +747,13 @@ button {
 .section-title {
   font-family: var(--font-condensed);
   font-weight: 800;
-  font-size: clamp(2.4rem, 6vw, 4.4rem);
-  line-height: 1.02;
+  font-size: clamp(1.4rem, 5.8vw, 4.4rem);
+  line-height: 1.05;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 1rem;
+  white-space: nowrap !important;
 }
 
 .section-sub {
@@ -1053,9 +1054,9 @@ button {
 }
 
 #websites .section-title {
-  white-space: nowrap;
-  font-size: clamp(2rem, 4.4vw, 4.2rem);
-  letter-spacing: 0.02em;
+  white-space: nowrap !important;
+  font-size: clamp(1.4rem, 5.6vw, 4.2rem);
+  letter-spacing: 0.01em;
   margin-bottom: 1rem;
   position: relative;
   z-index: 1;
@@ -1069,13 +1070,6 @@ button {
   line-height: 1.6;
   position: relative;
   z-index: 1;
-}
-
-@media (max-width: 768px) {
-  #websites .section-title {
-    white-space: normal;
-    font-size: clamp(1.8rem, 6.5vw, 2.6rem);
-  }
 }
 
 .websites-grid {
@@ -1264,9 +1258,9 @@ button {
 }
 
 #graphic .section-title {
-  white-space: nowrap;
-  font-size: clamp(2rem, 4.4vw, 4.2rem);
-  letter-spacing: 0.02em;
+  white-space: nowrap !important;
+  font-size: clamp(1.35rem, 5.6vw, 4.2rem);
+  letter-spacing: 0.01em;
   margin-bottom: 1rem;
   position: relative;
   z-index: 1;
@@ -1496,10 +1490,6 @@ button {
   .square-grid--4col {
     grid-template-columns: 1fr;
   }
-  #graphic .section-title {
-    white-space: normal;
-    font-size: clamp(1.8rem, 6.5vw, 2.6rem);
-  }
 }
 
 /* ==========================================================================
@@ -1554,12 +1544,13 @@ button {
 .video-header .section-title {
   font-family: var(--font-condensed);
   font-weight: 800;
-  font-size: clamp(2.4rem, 4.2vw, 3.8rem);
+  font-size: clamp(1.4rem, 5.8vw, 3.8rem);
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 0.85rem;
   line-height: 1.05;
+  white-space: nowrap !important;
 }
 
 .video-header .section-sub {
@@ -2016,6 +2007,7 @@ button {
 .clients-section .section-title {
   position: relative;
   z-index: 1;
+  white-space: nowrap !important;
 }
 
 .clients-sub {
@@ -2501,18 +2493,17 @@ button {
     margin: 0.15rem 0;
   }
 
-  /* Section Titles & Subtitles */
-  .section-title {
-    font-size: clamp(1.45rem, 6.5vw, 2.4rem);
-    line-height: 1.15;
-    word-break: break-word;
-    letter-spacing: 0.01em;
-  }
-
+  /* Section Titles - ALWAYS in ONE line */
+  .section-title,
+  .video-header .section-title,
   #websites .section-title,
   #graphic .section-title,
   .clients-section .section-title {
-    font-size: clamp(1.45rem, 6.5vw, 2.4rem);
+    font-size: clamp(1.15rem, 5.5vw, 2.5rem) !important;
+    line-height: 1.1 !important;
+    white-space: nowrap !important;
+    word-break: keep-all !important;
+    letter-spacing: 0.01em !important;
   }
 
   .section-sub {
@@ -2729,14 +2720,16 @@ button {
     white-space: nowrap;
   }
 
-  .section-title {
-    font-size: clamp(1.3rem, 6.2vw, 1.85rem);
-  }
-
+  .section-title,
+  .video-header .section-title,
   #websites .section-title,
   #graphic .section-title,
   .clients-section .section-title {
-    font-size: clamp(1.3rem, 6.2vw, 1.85rem);
+    font-size: clamp(1rem, 5.2vw, 1.65rem) !important;
+    line-height: 1.1 !important;
+    white-space: nowrap !important;
+    word-break: keep-all !important;
+    letter-spacing: 0 !important;
   }
 
   .client-logo-item img {
