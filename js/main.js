@@ -41,12 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // Mobile menu toggle
   if (navToggle && mobileMenu) {
     navToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('open');
+      const isOpen = mobileMenu.classList.toggle('open');
+      navToggle.classList.toggle('open', isOpen);
     });
 
     mobileMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.classList.remove('open');
+        navToggle.classList.remove('open');
       });
     });
   }
