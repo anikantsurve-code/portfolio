@@ -2494,16 +2494,20 @@ button {
   }
 
   /* Section Titles - ALWAYS in ONE line */
+  h2.section-title,
   .section-title,
   .video-header .section-title,
+  #video .section-title,
   #websites .section-title,
   #graphic .section-title,
+  #clients .section-title,
   .clients-section .section-title {
-    font-size: clamp(1.15rem, 5.5vw, 2.5rem) !important;
+    font-size: clamp(1rem, 5.2vw, 2.4rem) !important;
     line-height: 1.1 !important;
     white-space: nowrap !important;
     word-break: keep-all !important;
     letter-spacing: 0.01em !important;
+    text-align: center;
   }
 
   .section-sub {
@@ -2720,16 +2724,20 @@ button {
     white-space: nowrap;
   }
 
+  h2.section-title,
   .section-title,
   .video-header .section-title,
+  #video .section-title,
   #websites .section-title,
   #graphic .section-title,
+  #clients .section-title,
   .clients-section .section-title {
-    font-size: clamp(1rem, 5.2vw, 1.65rem) !important;
+    font-size: clamp(0.92rem, 5vw, 1.55rem) !important;
     line-height: 1.1 !important;
     white-space: nowrap !important;
     word-break: keep-all !important;
     letter-spacing: 0 !important;
+    text-align: center;
   }
 
   .client-logo-item img {
