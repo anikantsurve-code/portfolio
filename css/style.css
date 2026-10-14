@@ -2425,19 +2425,38 @@ button {
     padding-right: 0;
   }
 
-  .section {
-    padding: 4.5rem 0;
+  /* Compact section padding on mobile to eliminate massive black dead zones */
+  .section,
+  #websites,
+  #graphic,
+  .video-section,
+  .services-section {
+    padding: 3.25rem 0;
+  }
+
+  .website-section-header,
+  .graphic-section-header,
+  .video-header {
+    margin: 0 auto 1.5rem;
+  }
+
+  .graphic-group {
+    margin-bottom: 2rem;
+  }
+
+  .video-section-group {
+    margin-bottom: 2rem;
   }
 
   /* Hero Mobile Refinement */
   .hero {
     min-height: 88vh;
-    padding: 5.5rem 0 2.5rem;
+    padding: 5rem 0 2.25rem;
   }
 
   .hero__title-wrap {
     --wordmark-size: clamp(2.25rem, 11vw, 4.2rem);
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 1.75rem auto;
   }
 
   .hero__label {
@@ -2468,7 +2487,7 @@ button {
 
   /* Disciplines Statement Fix - Single Punchy Lines, No 2-word Wrap */
   .disciplines {
-    padding: 4.5rem 0 3.75rem;
+    padding: 3.75rem 0 3.25rem;
   }
 
   .disciplines__title {
@@ -2498,13 +2517,13 @@ button {
 
   .section-sub {
     font-size: 0.95rem;
-    margin-bottom: 2.25rem;
+    margin-bottom: 2rem;
     line-height: 1.55;
   }
 
   /* About Marquee Mobile Fix - Zero Horizontal Overflow */
   .about__showcase {
-    margin-top: 2.5rem;
+    margin-top: 2.25rem;
     width: 100%;
     margin-left: 0;
     overflow: hidden;
@@ -2530,7 +2549,7 @@ button {
     scrollbar-width: none;
     justify-content: flex-start;
     padding: 0.5rem 1rem;
-    margin: 1.5rem -4% 2rem -4%;
+    margin: 1.25rem -4% 1.75rem -4%;
     width: calc(100% + 8%);
     gap: 0.5rem;
   }
@@ -2579,11 +2598,11 @@ button {
 
   /* Worked With (Clients) Mobile Polish - Crisp 3x3 Vector Logos */
   .clients-section {
-    padding: 4.5rem 0 3.5rem;
+    padding: 3.5rem 0 1rem;
   }
 
   .clients-sub {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-size: 0.95rem;
   }
 
@@ -2594,10 +2613,10 @@ button {
   .clients-mobile-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem 0.75rem;
+    gap: 1.25rem 0.75rem;
     align-items: center;
     justify-items: center;
-    padding: 0.5rem 0;
+    padding: 0.25rem 0 0.5rem;
   }
 
   .client-logo-item {
@@ -2619,9 +2638,9 @@ button {
     opacity: 0.85;
   }
 
-  /* Contact Box & Form Inputs */
+  /* Contact Box & Form Inputs - Seamless tight transition directly below logos */
   .contact-section {
-    padding: 2.5rem 0 5rem;
+    padding: 1rem 0 4rem;
   }
 
   /* Remove awkward cut-off grey watermark text above contact card on mobile */
@@ -2670,6 +2689,21 @@ button {
 
 /* Extra Compact Android Devices (360px - 480px) */
 @media (max-width: 480px) {
+  .section,
+  #websites,
+  #graphic,
+  .video-section,
+  .services-section {
+    padding: 2.75rem 0;
+  }
+
+  .clients-section {
+    padding: 3rem 0 0.75rem;
+  }
+
+  .contact-section {
+    padding: 0.75rem 0 3.5rem;
+  }
   .hero__title-wrap {
     --wordmark-size: clamp(2rem, 11vw, 3.4rem);
     margin: 0 auto 1.75rem auto;
