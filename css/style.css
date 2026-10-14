@@ -2050,6 +2050,10 @@ button {
   filter: brightness(1.08);
 }
 
+.clients-mobile-grid {
+  display: none;
+}
+
 /* ==========================================================================
    LET'S CONNECT / CONTACT - Matching 08_Worked with and let's connect.png
    ========================================================================== */
@@ -2462,11 +2466,34 @@ button {
     margin-top: 2rem;
   }
 
+  /* Disciplines Statement Fix - Single Punchy Lines, No 2-word Wrap */
+  .disciplines {
+    padding: 4.5rem 0 3.75rem;
+  }
+
+  .disciplines__title {
+    font-size: clamp(1.4rem, 6.8vw, 2.6rem);
+    line-height: 1.25;
+    white-space: nowrap;
+  }
+
+  .disciplines__item {
+    padding: 0.12em 0;
+    margin: 0.15rem 0;
+  }
+
   /* Section Titles & Subtitles */
   .section-title {
-    font-size: clamp(1.85rem, 7.5vw, 2.75rem);
-    line-height: 1.08;
+    font-size: clamp(1.45rem, 6.5vw, 2.4rem);
+    line-height: 1.15;
     word-break: break-word;
+    letter-spacing: 0.01em;
+  }
+
+  #websites .section-title,
+  #graphic .section-title,
+  .clients-section .section-title {
+    font-size: clamp(1.45rem, 6.5vw, 2.4rem);
   }
 
   .section-sub {
@@ -2493,16 +2520,31 @@ button {
     height: 145px;
   }
 
-  /* Filter Tabs Touch Usability */
+  /* Filter Tabs Touch Usability - Smooth Edge-to-Edge Swipeable Pills */
   .filter-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    justify-content: flex-start;
+    padding: 0.5rem 1rem;
+    margin: 1.5rem -4% 2rem -4%;
+    width: calc(100% + 8%);
     gap: 0.5rem;
-    margin: 1.5rem 0 2rem;
-    justify-content: center;
+  }
+
+  .filter-tabs::-webkit-scrollbar {
+    display: none;
   }
 
   .filter-tab {
-    font-size: 0.74rem;
-    padding: 0.5rem 1rem;
+    flex-shrink: 0;
+    white-space: nowrap;
+    scroll-snap-align: center;
+    font-size: 0.76rem;
+    padding: 0.55rem 1.15rem;
   }
 
   /* Grids & Cards */
@@ -2535,9 +2577,9 @@ button {
     padding: 2rem 1.5rem;
   }
 
-  /* Worked With / Logos */
-  .clients-grid-wrap {
-    padding: 0;
+  /* Worked With (Clients) Mobile Polish - Crisp 3x3 Vector Logos */
+  .clients-section {
+    padding: 4.5rem 0 3.5rem;
   }
 
   .clients-sub {
@@ -2545,14 +2587,59 @@ button {
     font-size: 0.95rem;
   }
 
+  .clients-grid-img {
+    display: none;
+  }
+
+  .clients-mobile-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem 0.75rem;
+    align-items: center;
+    justify-items: center;
+    padding: 0.5rem 0;
+  }
+
+  .client-logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 44px;
+    padding: 0 4px;
+  }
+
+  .client-logo-item img {
+    max-height: 28px;
+    max-width: 90px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.85;
+  }
+
   /* Contact Box & Form Inputs */
+  .contact-section {
+    padding: 2.5rem 0 5rem;
+  }
+
+  /* Remove awkward cut-off grey watermark text above contact card on mobile */
+  .contact-watermark-wrap {
+    display: none;
+  }
+
+  .contact-container {
+    padding: 0 0.5rem;
+  }
+
   .contact-box {
     padding: 2rem 1.25rem;
     border-radius: 16px;
   }
 
   .contact-box__title {
-    font-size: clamp(1.6rem, 5.8vw, 2.2rem);
+    font-size: clamp(1.5rem, 5.8vw, 2.2rem);
   }
 
   .form-grid {
@@ -2599,6 +2686,28 @@ button {
   .hero__signature-line {
     width: 104%;
     left: -2%;
+  }
+
+  /* Disciplines on Compact Android */
+  .disciplines__title {
+    font-size: clamp(1.2rem, 6.2vw, 1.75rem);
+    line-height: 1.28;
+    white-space: nowrap;
+  }
+
+  .section-title {
+    font-size: clamp(1.3rem, 6.2vw, 1.85rem);
+  }
+
+  #websites .section-title,
+  #graphic .section-title,
+  .clients-section .section-title {
+    font-size: clamp(1.3rem, 6.2vw, 1.85rem);
+  }
+
+  .client-logo-item img {
+    max-height: 24px;
+    max-width: 80px;
   }
 
   .navbar__mobile {
