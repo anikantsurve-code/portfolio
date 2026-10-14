@@ -2479,20 +2479,21 @@ button {
     margin-top: 2rem;
   }
 
-  /* Disciplines Statement Fix - Single Punchy Lines, No 2-word Wrap */
+  /* Disciplines Statement - Bold condensed stack matching Figma Artboard 03 */
   .disciplines {
-    padding: 3.75rem 0 3.25rem;
+    padding: clamp(4.5rem, 8vw, 6.5rem) 0;
   }
 
   .disciplines__title {
-    font-size: clamp(1.4rem, 6.8vw, 2.6rem);
-    line-height: 1.25;
+    font-size: clamp(2.2rem, 8.8vw, 3.8rem);
+    line-height: 0.94;
+    letter-spacing: 0.015em;
     white-space: nowrap;
   }
 
   .disciplines__item {
-    padding: 0.12em 0;
-    margin: 0.15rem 0;
+    padding: 0.05em 0;
+    margin: 0;
   }
 
   /* Section Titles - ALWAYS in ONE line */
@@ -2740,11 +2741,17 @@ button {
     left: -2%;
   }
 
-  /* Disciplines on Compact Android */
+  /* Disciplines on Compact Mobile / Android - Tight gap and bold size */
   .disciplines__title {
-    font-size: clamp(1.2rem, 6.2vw, 1.75rem);
-    line-height: 1.28;
+    font-size: clamp(1.95rem, 8.8vw, 2.8rem);
+    line-height: 0.94;
+    letter-spacing: 0.01em;
     white-space: nowrap;
+  }
+
+  .disciplines__item {
+    padding: 0.04em 0;
+    margin: 0;
   }
 
   h2.section-title,
