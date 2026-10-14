@@ -1,6 +1,6 @@
 
 /**
- * ANIKANT SURVE — PORTFOLIO JAVASCRIPT
+ * ANIKANT SURVE | PORTFOLIO JAVASCRIPT
  * Interactivity: Nav, Lightbox Modal, Video Player, Filters, Toast & Form Handling
  */
 

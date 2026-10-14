@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ANIKANT SURVE — PORTFOLIO DESIGN SYSTEM
+   ANIKANT SURVE | PORTFOLIO DESIGN SYSTEM
    Modern Dark Aesthetics, Glassmorphism, Micro-interactions & Fluid Layout
    ========================================================================== */
 
@@ -168,7 +168,7 @@ button {
 }
 
 /* ==========================================================================
-   NAVIGATION — Compact Clean Docked Navbar (3% Edge Spacing)
+   NAVIGATION | Compact Clean Docked Navbar (3% Edge Spacing)
    ========================================================================== */
 .navbar {
   position: fixed;
@@ -763,6 +763,7 @@ button {
   max-width: 680px;
   line-height: 1.65;
   margin-bottom: 3.5rem;
+  text-wrap: balance;
 }
 
 /* About Section (Matching 02_About me.png) */
@@ -1070,6 +1071,7 @@ button {
   line-height: 1.6;
   position: relative;
   z-index: 1;
+  text-wrap: balance;
 }
 
 .websites-grid {
@@ -2514,6 +2516,9 @@ button {
     font-size: 0.95rem;
     margin-bottom: 2rem;
     line-height: 1.55;
+    text-wrap: balance;
+    max-width: 95%;
+    margin-inline: auto;
   }
 
   /* About Marquee Mobile Fix - Zero Horizontal Overflow */
